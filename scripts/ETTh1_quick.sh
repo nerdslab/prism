@@ -48,8 +48,8 @@ export MASTER_PORT=$((12000 + RANDOM % 1000))
 
 # pred_len = 96
 pred_length=96
-for seed in 14; do
-for dropout in 0.1; do
+for seed in 13; do
+for dropout in 0.25; do
     OUTDIR=./temp/logs/exp_prism/${dataset}_cont${context_length}_${features}
     mkdir -p "$OUTDIR"
     LOGFILE="pred${pred_length}_cont${context_length}_s${seed}_${features}_w${num_components}_L${tree_depth}_ov${overlap}_d${dropout}_loss${loss}_p${patience}_${decomp_kind}.log"
@@ -87,7 +87,7 @@ done
 
 # pred_len = 192
 pred_length=192
-for seed in 14; do
+for seed in 13; do
 for dropout in 0.25; do
     OUTDIR=./temp/logs/exp_prism/${dataset}_cont${context_length}_${features}
     mkdir -p "$OUTDIR"
@@ -125,7 +125,7 @@ done
 
 # pred_len = 336
 pred_length=336
-for seed in 14; do
+for seed in 13; do
 for dropout in 0.25; do
     OUTDIR=./temp/logs/exp_prism/${dataset}_cont${context_length}_${features}
     mkdir -p "$OUTDIR"
@@ -164,7 +164,7 @@ done
 
 # pred_len = 720
 pred_length=720
-for seed in 14; do
+for seed in 13; do
 for dropout in 0.25; do
     OUTDIR=./temp/logs/exp_prism/${dataset}_cont${context_length}_${features}
     mkdir -p "$OUTDIR"
