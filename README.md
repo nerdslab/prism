@@ -1,5 +1,5 @@
 # PRISM
-Hierarchical multiscale forecasting for long, multivariate time series.
+This is the paper for PRISM: [PRISM: A hierarchical multiscale approach for time series forecasting](https://arxiv.org/abs/2512.24898).
 
 PRISM builds a learnable multiresolution tree that decomposes signals into band-limited fragments, routes them with soft gates, mixes sibling bands, and fuses forecasts at the root. It is end-to-end, interpretable, and strong on long horizons with lower memory.
 
@@ -122,10 +122,11 @@ If you use PRISM, please cite:
 
 ```bibtex
 @article{prism2025,
-  title={PRISM: A Hierarchical Multiscale Approach for Time Series Forecasting},
+  title={PRISM: A hierarchical multiscale approach for time series forecasting},
   author={Chen, Zihao and Andre, Alexandre and Ma, Wenrui and Knight, Ian and Shuvaev, Sergey and Dyer, Eva},
-  journal={...},
-  year={2025}
+  journal={arXiv preprint arXiv:2512.24898},
+  year={2025},
+  url={https://arxiv.org/abs/2512.24898}
 }
 ```
 
